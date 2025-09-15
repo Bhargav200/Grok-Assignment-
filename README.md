@@ -1,38 +1,77 @@
-# Grok Assignment
+# Groq Assignment
 
-This repository contains the Jupyter Notebook for the Grok Assignment.
+This repository contains my submission for the **Conversation Management & Classification using Groq API** assignment.
 
-## Contents
+---
 
-- `grok_assignment.ipynb`: The main notebook file containing all tasks, code, and explanations related to the assignment.
+## 📌 Tasks
 
-## Usage
+### Task 1: Conversation Management with Summarization
+- Maintains conversation history (user ↔ assistant).
+- Supports truncation by:
+  - Last N messages
+  - Character/word length
+- Performs **summarization after every k-th run** (demonstrated with k=3).
+- Tested with multiple conversation samples.
+
+### Task 2: JSON Schema Classification & Information Extraction
+- Defines a JSON schema to extract:
+  - Name
+  - Email
+  - Phone
+  - Location
+  - Age
+- Implements extraction using **Groq API** (OpenAI-compatible SDK).
+- Validates outputs with multiple test samples.
+
+---
+
+## ⚙️ Requirements
+
+- Python 3.8+
+- `openai` (Groq-compatible client)
+- Google Colab (recommended for execution)
+
+---
+
+## 🚀 How to Run
 
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/Bhargav200/Grok-Assignment-.git
+   cd Grok-Assignment-
    ```
+
 2. **Open the notebook:**
-   - Make sure you have [Jupyter Notebook](https://jupyter.org/) installed.
-   - Run the following command in your terminal:
-     ```bash
-     jupyter notebook grok_assignment.ipynb
+   - Launch [Google Colab](https://colab.research.google.com/) or Jupyter Notebook.
+   - Upload or open `grok_assignment.ipynb`.
+
+3. **Install dependencies:**
+   - Run the following in a notebook cell:
+     ```python
+     !pip install openai
      ```
-3. **Explore the notebook:**
-   - Review code cells, explanations, and outputs.
-   - Execute cells as needed or modify for your own exploration.
 
-## Requirements
+4. **Configure API access:**
+   - Add your Groq API key where required in the notebook.
 
-- Python (recommended version: 3.x)
-- Jupyter Notebook
-
-Additional dependencies, if any, will be listed at the top of the notebook.
-
-## License
-
-This repository is for educational use. Please check with the repository owner for licensing or reuse permissions.
+5. **Run the notebook:**
+   - Execute cells in order and follow instructions in the notebook.
 
 ---
 
-Feel free to reach out for any questions or clarifications regarding the assignment notebook.
+## 📁 Repository Contents
+
+- `grok_assignment.ipynb` — Main notebook containing all code and explanations.
+
+---
+
+## 📝 License
+
+This repository is intended for educational use and assignment submission. Please contact the owner for reuse or licensing requests.
+
+---
+
+## 🙋‍♂️ Questions?
+
+Feel free to open an issue or reach out to the repository owner for help or clarification.
